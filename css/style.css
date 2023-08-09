@@ -64,8 +64,8 @@ nav {
 }
 
 
-/* Main */
-/* Partie haute */
+                                        /* Main */
+                                    /* Partie haute */
 
 main {
     margin-top: 60px;
@@ -75,7 +75,7 @@ h1 {
     font-size: 36px;
 }
 
-#banner_img {
+#banner {
     display:flex;
 }
 
@@ -101,7 +101,7 @@ h1 {
 }
 
 
-/* Texte bas */
+                                        /* Texte Portfolio */
 
 
 #texte_portfolio h2 {
@@ -110,33 +110,29 @@ h1 {
     padding-bottom: 50px;
     font-size: 36px;
 }
-#texte_portfolio{
-    margin-left: 11px;
-}
 
+                                        /* Les compétences */
 
-/* Hébergements à Marseille */
-
-#hebergements_populaires {
+#container_les_competences_et_outils {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 40px;
 }
 
-#container_fond_hebergement {
+#container_fond_competences {
     background-color: #F2F2F2;
     border-radius: 30px;
     width: 67%;
 }
 
-#container_fond_hebergement h2 {
+#container_fond_competences h2 {
     font-size: 26px;
     padding-top: 40px;
     text-align: center;
 }
 
-#container_articles_hebergement{
+#container_articles_competences{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -146,7 +142,7 @@ h1 {
     padding-left: 40px;
 }
 
-.article_hebergement {
+.article_competence {
     border-radius: 20px;
     background-color: #FFFFFF;
     width: 30%;
@@ -155,20 +151,22 @@ h1 {
     padding-bottom:11px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
     border: 5px solid #FFFFFF;
+    object-fit: cover;
 }
 
-.article_hebergement a {
+.article_competence a {
     text-decoration: none;
     color: black;
 }
 
-.article_hebergement img {
+.article_competence img {
     width: 100%;
     height: 65%;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
-.description_article_hebergement {
+.description_article_competence {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -178,12 +176,12 @@ h1 {
     padding-bottom: 11px;
 }
 
-.description_article_hebergement h3 {
+.description_article_competence h3 {
     padding-top: 10px;
     font-size: 20px;
 }
 
-.description_article_hebergement p {
+.description_article_competence p {
     font-size: 13px;
     padding-top: 5px;
 }
@@ -206,18 +204,10 @@ h1 {
     font-size: 16px;
 }
 
-#afficher_plus {
-    font-size: 1.12rem;/*18px*/
-    font-weight: bold;
-    padding-top: 10px;
-    padding-left: 40px;
-
-}
-
 
 /* Les plus populaires */
 
-#container_fond_populaire {
+#container_fond_outils {
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -226,7 +216,7 @@ h1 {
     height: 625px;
 }
 
-#container_titre_populaire {
+#container_titre_outils {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -234,11 +224,11 @@ h1 {
     padding-top: 41px;
 }
 
-#container_titre_populaire i {
+#container_titre_outils i {
     color: #0065fc;
 }
 
-#container_articles_populaire {
+#container_articles_outils {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -247,7 +237,7 @@ h1 {
 
 }
 
-.article_populaire {
+.article_outil {
     display: flex;
     width: 80%;
     background-color: #FFFFFF;
@@ -255,14 +245,14 @@ h1 {
     box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
 }
 
-.article_populaire a {
+.article_outil a {
     display: flex;
     flex-direction: row;
     text-decoration: none;
     color: black;
 }
 
-.article_populaire img {
+.article_outil img {
     box-sizing: border-box;
     width: 40%;
     height: 144px;
@@ -270,7 +260,7 @@ h1 {
     border-radius: 20px 0px 0px 20px;
 }
 
-.texte_article_populaire {
+.texte_article_outil {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -280,16 +270,16 @@ h1 {
     padding-left: 15px;
 }
 
-.descriptif_article_populaire h3 {
+.descriptif_article_outil h3 {
     font-size: 18px;
 }
 
-.descriptif_article_populaire p {
+.descriptif_article_outil p {
     font-size: 13px;
     padding-top:  7px;
 }
 
-.star_article_populaire {
+.star_article_outil {
     color: #0065FC;
     display: flex;
     flex-direction: row;
@@ -309,14 +299,14 @@ h1 {
     padding-bottom: 25px;
 }
 
-#container_activites_marseille {
+#container_activites_projets {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 30px;
 }
 
-.activite_marseille {
+.activite_projet {
     width: 22%;
     height: 445px;
     border-radius: 20px;
@@ -324,36 +314,36 @@ h1 {
     box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
 }
 
-.activite_marseille a {
+.activite_projet a {
     text-decoration: none;
     color: black;
 }
 
-.activite_marseille img {
+.activite_projet img {
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 88%;
     object-fit: cover;
 }
 
-.activite_marseille img:hover + span {
+.activite_projet img:hover + span {
     visibility: visible;
 }
-.activite_marseille span {
+.activite_projet span {
     visibility: hidden;
 }
 
-.activite_marseille h3 {
+.activite_projet h3 {
     padding-left: 19px;
     font-size: 18px;
 }
-.titre_activite {
+.titre_projet {
     display: flex;
     align-items: center;
     height: 12%;
 }
 
-.titre_activite h3:hover{
+.titre_projet h3:hover{
     color: #0065FC;
 }
 
@@ -408,52 +398,42 @@ h1 {
 
                                                                                 /* Media Queries Tablette */
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:990px) {
 
 body {
     padding-left: 50px;
     padding-right: 50px;
 }
 
-/* Header */
-
-#nav_hebergements {
-    color: black;
-}
-
-#nav_hebergements:hover, #nav_activites:hover {
-    border-top: none;
-    color: black;
-}
 
 /* Section */
 
-#hebergements_populaires {
+#container_les_competences_et_outils {
     flex-direction: column;
 }
 
-/* Hébergements */
+/* Les compétences */
 
-#container_fond_hebergement {
+#container_fond_competences {
     width: 100%;
     height: 626px;
 }
 
-/* Les plus populaires */
+/* Les outils */
 
-#container_fond_populaire {
+#container_fond_outils{
     width: 100%;
     height: 278px;
     margin-top: 53px;
 }
 
-#container_titre_populaire {
+#container_titre_outils {
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
 }
 
-#container_articles_populaire {
+#container_articles_outils{
     flex-direction: row;
     justify-content: space-between;
     height: 144px;
@@ -462,40 +442,40 @@ body {
     padding-right: 40px;
 }
 
-.article_populaire {
+.article_outil {
     width: 32%;
 }
 
-.texte_article_populaire  {
+.texte_article_outil  {
     padding-left: 10px;
     
 }
 
-.descriptif_article_populaire h3 {
+.descriptif_article_outil h3 {
     font-size: 14px;
 }
 
-.descriptif_article_populaire p {
+.descriptif_article_outil p {
     font-size: 13px;
 }
 
 
-/* Activités */
+/* Les projets */
 
-#activites {
+#projets {
     height: 387px;
 }
 
-.activite_marseille {
+.activite_projet {
     height: 267px;
     margin-top: 25px;
 }
 
-.activite_marseille img {
+.activite_projet img {
     height: 80%;
 }
 
-.titre_activite {
+.titre_projet {
     height: 20%;
 }
 
@@ -524,20 +504,20 @@ nav {
     text-align: center;
 }
 
-#nav_hebergements {
+#nav_competences {
     padding-bottom: 23px;
     width: 50%;
     border-bottom: 3px solid #F2F2F2;
 }
 
-#nav_activites {
+#nav_projets {
     width: 50%;
     padding-bottom: 23px;
     margin-left: 0;
     border-bottom: 3px solid #F2F2F2;
 }
 
-#nav_hebergements:hover, #nav_activites:hover {
+#nav_comptences:hover, #nav_projets:hover, #nav_contact:hover {
     color: #0065FC;
     border-bottom: #0065FC 3px solid;
 }
@@ -548,172 +528,116 @@ main {
     margin-top: 31px;
 }
 
-#text_haut {
+/*#text_haut {
     padding-left: 20px;
     padding-right: 20px;
-}
-
-form {
-    margin-top: 36px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#recherche {
-    width: 100%;
-}
-
-#bouton_rechercher {
-    display: none;
-}
-
-#loupe {
-    display: flex;
-    padding: 17px;
-}
-
-#filtres {
-    flex-direction: column;
-    align-items: baseline;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#filtres p {
-    margin-bottom: 15px;
-}
-
-#container_bulle {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    row-gap: 17px;
-}
-
-.bulle_filtre {
-    width: 35%;
-    height: 50px;
-    padding: 0;
-    padding-left: 13px;
-    padding-right: 20px;
-}
-
-.bulle_filtre i {
-    font-size: 1.37rem;/*22px*/
-}
-
-.texte_filtre {
-    font-size: 0.68rem;/*11px*/
-
 }
 
 #texte_bas {
     padding-left: 20px;
     padding-right: 20px;
-}
+}*/
 /* Sections */
 
-#hebergements_populaires {
+#container_les_competences_et_outils {
     flex-direction: column-reverse;
     margin-top: 0;
 }
 
-/* Les plus populaires */
+/* Les outils */
 
-#container_fond_populaire {
+#container_fond_outils {
     height: 580px;
     border-radius: 0;
 }
 
-#container_titre_populaire {
+#container_titre_outils {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 28px;
 }
 
-#container_articles_populaire {
+#container_articles_outils {
     flex-direction: column;
     height: 80%;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.article_populaire {
+.article_outil {
     width: 100%;
 }
 
-.article_populaire a {
+.article_outil a {
     justify-content: space-between;
 }
 
-.descriptif_article_populaire h3 {
+.descriptif_article_outil h3 {
     font-size: 16px;
 }
 
-.descriptif_article_populaire p {
+.descriptif_article_outil p {
     font-size: 14px;
 }
 
-/* Hébergements */
+/* Les compétences */
 
-#container_fond_hebergement {
+#container_fond_competences {
     height: auto;
     background-color: #FFFFFF;
 }
 
-#container_fond_hebergement h2 {
+#container_fond_competences h2 {
     padding-left: 20px;
 }
 
-#container_articles_hebergement {
+#container_articles_competences {
     flex-direction: column;
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.article_hebergement {
+.article_competence {
     width: 100%;
 }
 
-.article_hebergement img {
+.article_comptence img {
     width: 100%;
 }
 
-#afficher_plus {
-    display: none;
-}
 
-/* Activités à Marseille */
+/* Les projets */
 
-#activites {
+#projets {
     height: 886px;
     padding-left:  20px;
     padding-right: 20px;
 }
 
-#titre_activites_marseille {
+#titre_activites_projets {
     display: flex;
     flex-wrap: wrap;
     width: 210px;
     margin-bottom: 0;
 }
 
-#container_activites_marseille {
+#container_activites_projets {
     flex-direction: column;
     padding-top: 0;
     height: 882px;
 }
 
-.activite_marseille {
+.activite_projet {
     width: 100%;
     height: 190px;
     margin-top: 0;
 }
 
-.activite_marseille img {
+.activite_projet img {
     height: 134px;
 }
 
-.titre_activite {
+.titre_projet {
     height: 25%;
 }
 
