@@ -127,7 +127,7 @@ h1 {
 }
 
 #container_fond_competences h2 {
-    font-size: 26px;
+    font-size: 30px;
     padding-top: 40px;
     text-align: center;
 }
@@ -224,8 +224,8 @@ h1 {
     padding-top: 41px;
 }
 
-#container_titre_outils i {
-    color: #0065fc;
+#container_titre_outils h2 {
+    font-size: 30px;
 }
 
 #container_articles_outils {
@@ -294,7 +294,7 @@ h1 {
 }
 
 #projets h2 {
-    font-size: 26px;
+    font-size: 30px;
     text-align: center;
     padding-bottom: 25px;
 }
@@ -340,6 +340,7 @@ h1 {
 .titre_projet {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     height: 12%;
 }
 
@@ -347,6 +348,9 @@ h1 {
     color: #0065FC;
 }
 
+.modale_globale a {
+    font-size: 16px;
+}
 /* Footer */
 
 #container_fond_footer {
@@ -394,6 +398,42 @@ h1 {
     color: #0065FC;
 }
 
+#modale {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 1000px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+#modale div {
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: #f2f2f2;
+    color:red;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border: 3px solid #cccccc;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+#modale a {
+  padding-left: 600px;
+}
+
                                                                                     /* Media Queries */
 
                                                                                 /* Media Queries Tablette */
@@ -428,7 +468,6 @@ body {
 }
 
 #container_titre_outils {
-    justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -466,6 +505,10 @@ body {
     height: 387px;
 }
 
+#projets h2 {
+    padding-bottom: 0px;
+}
+
 .activite_projet {
     height: 267px;
     margin-top: 25px;
@@ -491,6 +534,16 @@ body {
 
 /* Header */
 
+.article_competence img {
+    width: 25%;
+    padding-left: 35%;
+}
+.article_outil img {
+    width: 25%;
+}
+.texte_article_outil {
+    padding-left: 75px;
+}
 header {
     display: block;
     text-align: center;
@@ -505,6 +558,7 @@ nav {
 }
 
 #nav_competences {
+    padding-left: 20px;
     padding-bottom: 23px;
     width: 50%;
     border-bottom: 3px solid #F2F2F2;
@@ -517,9 +571,16 @@ nav {
     border-bottom: 3px solid #F2F2F2;
 }
 
-#nav_comptences:hover, #nav_projets:hover, #nav_contact:hover {
+#nav_contact {
+    width: 50%;
+    padding-bottom: 23px;
+    margin-left: 0;
+    border-bottom: 3px solid #F2F2F2;
+}
+
+#nav_competences:hover, #nav_projets:hover, #nav_contact:hover {
     color: #0065FC;
-    border-bottom: #0065FC 3px solid;
+    border-top: none;
 }
 
 /* Main */
@@ -527,17 +588,6 @@ nav {
 main {
     margin-top: 31px;
 }
-
-/*#text_haut {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#texte_bas {
-    padding-left: 20px;
-    padding-right: 20px;
-}*/
-/* Sections */
 
 #container_les_competences_et_outils {
     flex-direction: column-reverse;
@@ -585,6 +635,7 @@ main {
 #container_fond_competences {
     height: auto;
     background-color: #FFFFFF;
+    margin-top: 100px;
 }
 
 #container_fond_competences h2 {
@@ -612,6 +663,10 @@ main {
     height: 886px;
     padding-left:  20px;
     padding-right: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #titre_activites_projets {
@@ -625,12 +680,13 @@ main {
     flex-direction: column;
     padding-top: 0;
     height: 882px;
+    width: 100%;
 }
 
 .activite_projet {
     width: 100%;
     height: 190px;
-    margin-top: 0;
+    margin-top: 25px;
 }
 
 .activite_projet img {

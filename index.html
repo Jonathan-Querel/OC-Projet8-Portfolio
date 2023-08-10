@@ -11,6 +11,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet"> 
         <title>Portfolio - Jonathan QUEREL</title>
     </head>
+    <script>
+        function modale() {
+          el = document.getElementById("modale");
+          el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
+        }
+      </script>
 
 
     <body>
@@ -36,7 +42,7 @@
             <div id="texte_portfolio">
                 <h2>Bienvenue sur mon Portolio</h2>
             </div>
-
+        
 
                                                     <!-- Les compétences-->
 
@@ -245,36 +251,93 @@
                 <article class="activite_projet">
                     <a href="https://github.com/Jonathan-Querel/OC-Projet2-HTML-CSS" target="_blank" title="Projet 1 - Booki">
                         <img src="images/projets/Booki.png" alt="Booki">
-                            <div class="titre_projet">
-                                <h3>Booki</h3>
+                        <div class="titre_projet">
+                            <h3>Booki</h3>
+                            <div class="modale_globale">
+                                <a href="#" onclick="modale()">Description</a>
+                                <div id="modale">
+                                    <a href="#" onclick="modale()">X</a>
+                                    <h4>Booki</h4>
+                                    <p>Création de la page d'accueil d'une agence de voyage avec HTML & CSS</p>
+                                    <p>Compétences</p>
+                                    <ul>
+                                        <li>Installer un environnement de développement front-end</li>
+                                        <li>Intégrer du contenu conformément à une maquette avec HTML & CSS</li>
+                                        <li>Implémenter une interface responsive avec HTML & CSS</li>
+                                        <li>Versionner son projet avec Git et Github</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
                     </a>
                 </article>
 
                 <article class="activite_projet">
                     <a href="https://github.com/Jonathan-Querel/OC-Projet3-JavaScript" target="_blank" title="Projet 2 - Sophie Bluel">
                         <img src="images/projets/Sophiebluel.png" alt="Sophie Bluel, architecte d'intérieur">
-                            <div class="titre_projet">
-                                <h3>Sophie Bluel</h3>
+                        <div class="titre_projet">
+                            <h3>Sophie Bluel</h3>
+                            <div class="modale_globale">
+                                <a href="#" onclick="modale()">Description</a>
+                                <div id="modale">
+                                    <a href="#" onclick="modale()">X</a>
+                                    <h4>Sophie Bluel - Architecte d'intérieur</h4>
+                                    <p>Création d'une page web dynamique avec JavaScript</p>
+                                    <p>Compétences</p>
+                                    <ul>
+                                        <li>Manipuler les éléments du DOM avec JavaScript</li>
+                                        <li>Gérer les évènements utilisateurs avec JavaScript</li>
+                                        <li>Récupérer les données utilisateurs via des formulaires</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
                     </a>
                 </article>
 
                 <article class="activite_projet">
                     <a href="https://github.com/Jonathan-Querel/OC-Projet5-Debugger-et-optimiser-un-site" target="_blank" title="Projet 3 - Nina Carducci">
                         <img src="images/projets/Ninacarducci.png" alt="Nina Carducci, photographe d'intérieur">
-                            <div class="titre_projet">
-                                <h3>Nina Carducci</h3>
+                        <div class="titre_projet">
+                            <h3>Nina Carducci</h3>
+                            <div class="modale_globale">
+                                <a href="#" onclick="modale()">Description</a>
+                                <div id="modale">
+                                    <a href="#" onclick="modale()">X</a>
+                                    <h4>Nina Carducci - Photographe</h4>
+                                    <p>Optimisation et débug d'un site de photographe</p>
+                                    <p>Compétences</p>
+                                    <ul>
+                                        <li>Optimiser les performances, le référencement et l'accessibilité d'un site web</li>
+                                        <li>Débugger un site web grâce aux Chrome DevTools</li>
+                                        <li>Rédiger un cahier de recette pour tester un site</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
                     </a>
                 </article>
 
                 <article class="activite_projet">
                     <a href="https://github.com/Jonathan-Querel/OC-Projet6-React" target="_blank" title="Projet 4 - Kasa">
                         <img src="images/projets/Kasa.png" alt="Kasa">
-                            <div class="titre_projet">
-                                <h3>Kasa</h3>
+                        <div class="titre_projet">
+                            <h3>Kasa</h3>
+                            <div class="modale_globale">
+                                <a href="#" onclick="modale()">Description</a>
+                                <div id="modale">
+                                    <a href="#" onclick="modale()">X</a>
+                                    <h4>Kasai</h4>
+                                    <p>Création d'une application web de location immobilière avec React</p>
+                                    <p>Compétences</p>
+                                    <ul>
+                                        <li>Développer des éléments de l'interface d'un site web grâce à des composants React</li>
+                                        <li>Initialiser une application avec Create React App</li>
+                                        <li>Configurer la navigation entre les pages de l'application avec React Router</li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
                     </a>
                 </article>
 
