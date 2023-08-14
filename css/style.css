@@ -334,7 +334,7 @@ h1 {
 }
 
 .activite_projet h3 {
-    padding-left: 19px;
+    padding-left: 10px;
     font-size: 18px;
 }
 .titre_projet {
@@ -394,6 +394,10 @@ h1 {
 }
 
  /* Modales*/
+
+#modaledescription{
+    padding-right: 10px;
+}
 
  #modale {
     visibility: hidden;
@@ -571,8 +575,17 @@ body {
     height: 80%;
 }
 
+.activite_projet h3 {
+    font-size: 14px;
+}
+
 .titre_projet {
     height: 20%;
+}
+
+#modaledescription{
+    font-size: 14px;
+    padding-left: 5px;
 }
 
 }
@@ -748,6 +761,14 @@ main {
 
 .titre_projet {
     height: 25%;
+}
+
+.activite_projet h3 {
+    font-size: 18px;
+}
+
+#modaledescription{
+    font-size: 18px;
 }
 
 /* Footer */
