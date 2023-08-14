@@ -434,6 +434,114 @@ h1 {
   padding-left: 600px;
 }
 
+#modale1 {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 1000px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+#modale1 div {
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: #f2f2f2;
+    color:red;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border: 3px solid #cccccc;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+#modale1 a {
+  padding-left: 600px;
+}
+
+#modale2 {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 1000px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+#modale2 div {
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: #f2f2f2;
+    color:red;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border: 3px solid #cccccc;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+#modale2 a {
+  padding-left: 600px;
+}
+
+#modale3 {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 1000px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+#modale3 div {
+    width: 500px;
+    height: 300px;
+    margin: 100px auto;
+    background-color: #f2f2f2;
+    color:red;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    border: 3px solid #cccccc;
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+  }
+
+#modale3 a {
+  padding-left: 600px;
+}
+
                                                                                     /* Media Queries */
 
                                                                                 /* Media Queries Tablette */
