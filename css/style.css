@@ -389,9 +389,8 @@ h1 {
     color: black;
 }
 
-.container_footer i {
-    font-size: 70px;
-    padding: 50px;
+.container_footer img {
+    border-radius: 20%;
 }
 
 .container_footer i:hover {
