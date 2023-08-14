@@ -393,10 +393,6 @@ h1 {
     border-radius: 20%;
 }
 
-.container_footer a img:hover {
-    color: #0065FC;
-}
-
 #modale {
     visibility: hidden;
     position: absolute;
@@ -811,7 +807,7 @@ footer {
 }
 
 #container_fond_footer {
-    height: 501px;
+    height: auto;
 }
 
 #container_regroupement_footer {
@@ -823,6 +819,8 @@ footer {
 
 .container_footer {
     width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 }
