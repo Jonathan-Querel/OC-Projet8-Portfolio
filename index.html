@@ -2,362 +2,94 @@
 <html lang="fr">
 
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Site Portfolio de Jonathan QUEREL - Je présente l'ensemble des mes compétences acquises tout au long de mon parcours de formation OpenClassrooms">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/9b9e0ef79a.js" crossorigin="anonymous"></script>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet"> 
-        <title>Portfolio - Jonathan QUEREL</title>
-        <script>
-            function modale() {
-              el = document.getElementById("modale");
-              el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
-            }
-          </script>
-          <script>
-            function modale1() {
-              el = document.getElementById("modale1");
-              el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
-            }
-          </script>
-          <script>
-            function modale2() {
-              el = document.getElementById("modale2");
-              el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
-            }
-          </script>
-          <script>
-            function modale3() {
-              el = document.getElementById("modale3");
-              el.style.visibility = el.style.visibility == "visible" ? "hidden" : "visible";
-            }
-          </script>
-    </head>
-        
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site Portfolio de Jonathan QUEREL - Je présente l'ensemble des mes compétences acquises tout au long de mon parcours de formation OpenClassrooms">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9b9e0ef79a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="competences.js" defer></script>
+    <script src="outils.js" defer></script>
+    <script src="projets.js" defer></script>
+    <title>Portfolio - Jonathan QUEREL</title>
+    <script>
+        function toggleModal(modalId) {
+            const el = document.getElementById(modalId);
+            el.style.visibility = el.style.visibility === "visible" ? "hidden" : "visible";
+        }
+    </script>
+</head>
 
-    <body>
 
-            <header>
-                <img src="images/logo/Profil.jpg" alt="Photo Profil">
-                <nav>
-                    <a href="#competences" title="Lien vers les compétences" id="nav_competences">Compétences</a>
-                    <a href="#projets" title="Lien vers les projets" id="nav_projets">Projets</a>
-                    <a href="#contact" title="Lien vers les contacts" id="nav_contact">Contact</a>
-                </nav>
-            </header>
+<body>
+
+    <header>
+        <img src="images/logo/Profil.jpg" alt="Photo Profil">
+        <nav>
+            <a href="#competences" title="Lien vers les compétences" id="nav_competences">Compétences</a>
+            <a href="#projets" title="Lien vers les projets" id="nav_projets">Projets</a>
+            <a href="#contact" title="Lien vers les contacts" id="nav_contact">Contact</a>
+        </nav>
+    </header>
 
     <main>
 
-            <div id="banner">
-                <div id="banner_text">
-                    <h1>Jonathan QUEREL</h1>
-                    <h2>Développeur Front-End</h2>
-                </div>
+        <div id="banner">
+            <div id="banner_text">
+                <h1>Jonathan QUEREL</h1>
+                <h2>Développeur Front-End</h2>
             </div>
+        </div>
 
-            <div id="texte_portfolio">
-                <h3>Bienvenue sur mon Portolio</h3>
-            </div>
-        
+        <div id="texte_portfolio">
+            <h3>Bienvenue sur mon Portolio</h3>
+        </div>
 
-                                                    <!-- Les compétences-->
+
+        <!-- Les compétences-->
 
         <section id="container_les_competences_et_outils">
 
-                <div id="container_fond_competences">
+            <div id="container_fond_competences">
 
-                    <h2 id="competences">Mes Compétences</h2>
+                <h2 id="competences">Mes Compétences</h2>
 
-                    <div id="container_articles_competences">
-
-                        <article class="article_competence">
-                                <img src="images/competences/Html.webp" alt="Logo HTML5">
-                                    <div class="description_article_competence">
-                                        <div class="texte_article_competence">
-                                            <h3>HTML</h3>
-                                        </div>
-                                        <div class="star_article">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>    
-                        </article>
-
-                        <article class="article_competence">
-                                <img src="images/competences/Css.webp" alt="Logo CSS">
-                                    <div class="description_article_competence">
-                                        <div class="texte_article_competence">
-                                            <h3>CSS</h3>
-                                        </div>
-                                        <div class="star_article">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                    </div>
-                        </article>
-
-                        <article class="article_competence">
-                                <img src="images/competences/JavaScript.webp" alt="Logo JavaScript">
-                                    <div class="description_article_competence">
-                                        <div class="texte_article_competence">
-                                            <h3>JavaScript</h3>
-                                        </div>
-                                        <div class="star_article">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <div class="star_grise">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                        </article>
-
-                        <article class="article_competence">
-                                <img src="images/competences/ReactJS.webp" alt="Logo React.js">
-                                    <div class="description_article_competence">
-                                        <div class="texte_article_competence">
-                                            <h3>React.js</h3>
-                                        </div>
-                                        <div class="star_article">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                                <div class="star_grise">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                        </div>
-                                    </div>
-                        </article>
-
-                        <article class="article_competence"> 
-                                <img src="images/competences/NodeJS.webp" alt="Logo Node.js">
-                                    <div class="description_article_competence">
-                                        <div class="texte_article_competence">
-                                            <h3>Node.js</h3>
-                                        </div>
-                                        <div class="star_article">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                                <div class="star_grise">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                        </div>
-                                    </div>
-                        </article>
-
-                        <article class="article_competence">
-                                <img src="images/competences/MongoDB.webp" alt="Logo MongoDB">
-                                    <div class="description_article_competence">
-                                        <div class="texte_article_competence">
-                                            <h3>MongoDB</h3>
-                                        </div>
-                                        <div class="star_article">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                                <div class="star_grise">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                        </div>
-                                    </div>
-                        </article>
+                <div id="container_articles_competences"></div>
 
 
-                    </div>
+            </div>
 
 
-                </div>           
+            <!--Les outils-->
 
+            <div id="container_fond_outils">
 
-                                                    <!--Les outils-->
-
-                <div id="container_fond_outils">
-
-                    <div id="container_titre_outils">
-                        <h2>Outils</h2>
-                    </div>
-                    
-                            <div id="container_articles_outils">
-
-                                <article class="article_outil">
-                                        <img src="images/outils/Vscode.webp" alt="Logo de VsCode">
-                                            <div class="texte_article_outil">
-                                                <div class="descriptif_article_outil">
-                                                    <h3>Visual Studio Code</h3>
-                                                </div>
-                                                <div class="star_article_outil">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                            </div>
-                                </article>
-
-                                <article class="article_outil">
-                                        <img src="images/outils/Github.webp" alt="Logo de Github">
-                                            <div class="texte_article_outil">
-                                                <div class="descriptif_article_outil">
-                                                    <h3>Git / Github</h3>
-                                                </div>
-                                                <div class="star_article_outil">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                        <div class="star_grise"><i class="fa-solid fa-star"></i></div>
-                                                </div>
-                                            </div>
-                                </article>
-
-                                <article class="article_outil">
-                                        <img src="images/outils/Figma.webp" alt="Logo de Figma">
-                                            <div class="texte_article_outil">
-                                                <div class="descriptif_article_outil">
-                                                    <h3>Figma</h3>
-                                                </div>
-                                                <div class="star_article_outil">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                        <div class="star_grise">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </div>
-                                                </div>
-                                            </div>
-                                </article>
-
-                            </div>    
+                <div id="container_titre_outils">
+                    <h2>Outils</h2>
                 </div>
+
+                <div id="container_articles_outils"></div>
+            </div>
         </section>
 
 
-                                                    <!--Les projets-->
+        <!--Les projets-->
 
         <section id="projets">
 
             <h2 id="titre_activites_projets">Mes projets</h2>
-            
-            <div id="container_activites_projets">
 
-                <article class="activite_projet">
-                    <a href="https://github.com/Jonathan-Querel/OC-Projet2-HTML-CSS" target="_blank" title="Projet 1 - Booki">
-                        <img src="images/projets/Booki.webp" alt="Booki">
-                        <div class="titre_projet">
-                            <h3>Booki</h3>
-                            <div class="modale_globale">
-                                <a href="#" onclick="modale()" id="modaledescription">Description</a>
-                                <div id="modale">
-                                    <a href="#" onclick="modale()" id="modalea">X</a>
-                                    <h4 id="modaleh4">Booki</h4>
-                                    <p id="modalep">Création de la page d'accueil d'une agence de voyage avec HTML & CSS</p>
-                                    <p id="modalecompetences">Compétences</p>
-                                    <ul id="modaleul">
-                                        <li>Installer un environnement de développement front-end</li>
-                                        <li>Intégrer du contenu conformément à une maquette avec HTML & CSS</li>
-                                        <li>Implémenter une interface responsive avec HTML & CSS</li>
-                                        <li>Versionner son projet avec Git et Github</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="activite_projet">
-                    <a href="https://github.com/Jonathan-Querel/OC-Projet3-JavaScript" target="_blank" title="Projet 2 - Sophie Bluel">
-                        <img src="images/projets/Sophiebluel.webp" alt="Sophie Bluel, architecte d'intérieur">
-                        <div class="titre_projet">
-                            <h3>Sophie Bluel</h3>
-                            <div class="modale_globale">
-                                <a href="#" onclick="modale1()" id="modaledescription">Description</a>
-                                <div id="modale1">
-                                    <a href="#" onclick="modale1()" id="modalea">X</a>
-                                    <h4 id="modaleh4">Sophie Bluel</h4>
-                                    <p id="modalep">Création d'une page web dynamique avec JavaScript</p>
-                                    <p id="modalecompetences">Compétences</p>
-                                    <ul id="modaleul">
-                                        <li>Manipuler les éléments du DOM avec JavaScript</li>
-                                        <li>Gérer les évènements utilisateurs avec JavaScript</li>
-                                        <li>Récupérer les données utilisateurs via des formulaires</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="activite_projet">
-                    <a href="https://github.com/Jonathan-Querel/OC-Projet5-Debugger-et-optimiser-un-site" target="_blank" title="Projet 3 - Nina Carducci">
-                        <img src="images/projets/Ninacarducci.webp" alt="Nina Carducci, photographe d'intérieur">
-                        <div class="titre_projet">
-                            <h3>Nina Carducci</h3>
-                            <div class="modale_globale">
-                                <a href="#" onclick="modale2()" id="modaledescription">Description</a>
-                                <div id="modale2">
-                                    <a href="#" onclick="modale2()" id="modalea">X</a>
-                                    <h4 id="modaleh4">Nina Carducci - Photographe</h4>
-                                    <p id="modalep">Optimisation et débug d'un site de photographe</p>
-                                    <p id="modalecompetences">Compétences</p>
-                                    <ul id="modaleul">
-                                        <li>Optimiser les performances, le référencement et l'accessibilité d'un site web</li>
-                                        <li>Débugger un site web grâce aux Chrome DevTools</li>
-                                        <li>Rédiger un cahier de recette pour tester un site</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-                <article class="activite_projet">
-                    <a href="https://github.com/Jonathan-Querel/OC-Projet6-React" target="_blank" title="Projet 4 - Kasa">
-                        <img src="images/projets/Kasa.webp" alt="Kasa">
-                        <div class="titre_projet">
-                            <h3>Kasa</h3>
-                            <div class="modale_globale">
-                                <a href="#" onclick="modale3()" id="modaledescription">Description</a>
-                                <div id="modale3">
-                                    <a href="#" onclick="modale3()" id="modalea">X</a>
-                                    <h4 id="modaleh4">Kasa</h4>
-                                    <p id="modalep">Création d'une application web de location immobilière avec React</p>
-                                    <p id="modalecompetences">Compétences</p>
-                                    <ul id="modaleul">
-                                        <li>Développer des éléments de l'interface d'un site web grâce à des composants React</li>
-                                        <li>Initialiser une application avec Create React App</li>
-                                        <li>Configurer la navigation entre les pages de l'application avec React Router</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </article>
-
-            </div>
+            <div id="container_activites_projets"></div>
 
         </section>
 
     </main>
 
 
-                                                    <!--Footer-->
+    <!--Footer-->
 
     <footer id="contact">
 
@@ -366,7 +98,8 @@
             <div id="container_regroupement_footer">
 
                 <div class="container_footer">
-                    <a href="https://github.com/Jonathan-Querel" target="_blank" alt="Lien Github"><img src="images/footer/Github.webp" alt="Logo Github"></a>
+                    <a href="https://github.com/Jonathan-Querel" target="_blank" alt="Lien Github"><img
+                            src="images/footer/Github.webp" alt="Logo Github"></a>
                 </div>
 
                 <div class="container_footer">
@@ -385,8 +118,9 @@
                     </ul>
                 </div>
 
-                <div class="container_footer">              
-                    <a href="https://www.linkedin.com/in/jonathan-querel-a4692a4a" target="_blank" alt="Lien Linkedin"><img src="images/footer/Linkedin.webp" alt="Logo Linkedin"></a>    
+                <div class="container_footer">
+                    <a href="https://www.linkedin.com/in/jonathan-querel-a4692a4a" target="_blank"
+                        alt="Lien Linkedin"><img src="images/footer/Linkedin.webp" alt="Logo Linkedin"></a>
                 </div>
 
             </div>
@@ -394,8 +128,6 @@
         </div>
 
     </footer>
-
-
 </body>
 
 </html>

@@ -1,12 +1,39 @@
 /* Reset Css */
-html, body, div, span, h1, h2, h3, h4, h5, h6, p,
-a, em, img, strong, b, u, i, center, ol, ul, li,
-form, label, legend, article, aside, footer, header,
-menu, nav, section 
-{
-	margin: 0;
-	padding: 0;
-	border: 0;
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+img,
+strong,
+b,
+u,
+i,
+center,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+article,
+aside,
+footer,
+header,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 
@@ -35,7 +62,7 @@ header img {
 
 nav {
     display: flex;
-    font-size:24px;
+    font-size: 24px;
 }
 
 #nav_competences {
@@ -43,8 +70,10 @@ nav {
     color: red;
     padding-top: 44px;
 }
-    
-#nav_competences:hover, #nav_projets:hover, #nav_contact:hover {
+
+#nav_competences:hover,
+#nav_projets:hover,
+#nav_contact:hover {
     border-top: #0065FC 2px solid;
     color: #0065FC;
 }
@@ -64,8 +93,8 @@ nav {
 }
 
 
-                                        /* Main */
-                                    /* Partie haute */
+/* Main */
+/* Partie haute */
 
 main {
     margin-top: 60px;
@@ -76,11 +105,11 @@ h1 {
 }
 
 #banner {
-    display:flex;
+    display: flex;
 }
 
 #banner_text {
-    width:100%;
+    width: 100%;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -101,17 +130,17 @@ h1 {
 }
 
 
-                                        /* Texte Portfolio */
+/* Texte Portfolio */
 
 
 #texte_portfolio h3 {
-    display:flex;
+    display: flex;
     margin-top: 150px;
     padding-bottom: 50px;
     font-size: 36px;
 }
 
-                                        /* Les compétences */
+/* Les compétences */
 
 #container_les_competences_et_outils {
     display: flex;
@@ -132,7 +161,7 @@ h1 {
     text-align: center;
 }
 
-#container_articles_competences{
+#container_articles_competences {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -148,8 +177,8 @@ h1 {
     width: 30%;
     height: 199px;
     margin-bottom: 30px;
-    padding-bottom:11px;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+    padding-bottom: 11px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border: 5px solid #FFFFFF;
     object-fit: cover;
 }
@@ -195,8 +224,18 @@ h1 {
 }
 
 .star_grise {
-    display:flex;
+    display: flex;
     flex-direction: row;
+}
+
+
+
+.fa-star-grise {
+    color: gray;
+}
+
+.fa-star-grise:before {
+    content: "\f005";
 }
 
 .star_grise i {
@@ -241,8 +280,8 @@ h1 {
     display: flex;
     width: 80%;
     background-color: #FFFFFF;
-    border-radius: 20px ;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .article_outil a {
@@ -276,7 +315,7 @@ h1 {
 
 .descriptif_article_outil p {
     font-size: 13px;
-    padding-top:  7px;
+    padding-top: 7px;
 }
 
 .star_article_outil {
@@ -311,7 +350,7 @@ h1 {
     height: 445px;
     border-radius: 20px;
     background-color: #FFFFFF;
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .activite_projet a {
@@ -326,9 +365,10 @@ h1 {
     object-fit: cover;
 }
 
-.activite_projet img:hover + span {
+.activite_projet img:hover+span {
     visibility: visible;
 }
+
 .activite_projet span {
     visibility: hidden;
 }
@@ -337,6 +377,7 @@ h1 {
     padding-left: 10px;
     font-size: 18px;
 }
+
 .titre_projet {
     display: flex;
     align-items: center;
@@ -344,13 +385,14 @@ h1 {
     height: 12%;
 }
 
-.titre_projet h3:hover{
+.titre_projet h3:hover {
     color: #0065FC;
 }
 
 .modale_globale a {
     font-size: 16px;
 }
+
 /* Footer */
 
 #container_fond_footer {
@@ -373,7 +415,8 @@ h1 {
     font-weight: bold;
     font-size: 24px;
 }
-.container_footer ul{
+
+.container_footer ul {
     list-style: none;
     text-decoration: none;
     color: black;
@@ -393,58 +436,13 @@ h1 {
     border-radius: 20%;
 }
 
- /* Modales*/
+/* Modales*/
 
-#modaledescription{
+#modaledescription {
     padding-right: 10px;
 }
 
- #modale {
-    visibility: hidden;
-    position: absolute;
-    top: 1000px;
-    width: auto;
-    height: auto;
-    text-align: center;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 25px;
-    border: 3px solid #cccccc;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#modale1 {
-    visibility: hidden;
-    position: absolute;
-    top: 1000px;
-    width: auto;
-    height: auto;
-    text-align: center;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 25px;
-    border: 3px solid #cccccc;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#modale2 {
-    visibility: hidden;
-    position: absolute;
-    top: 1000px;
-    width: auto;
-    height: auto;
-    text-align: center;
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    padding: 25px;
-    border: 3px solid #cccccc;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#modale3 {
+.modal {
     visibility: hidden;
     position: absolute;
     top: 1000px;
@@ -460,10 +458,10 @@ h1 {
 }
 
 #modalea {
-  padding-left: 400px;
-  font-weight: bold;
-  display: flex;
-  justify-content: end;
+    padding-left: 400px;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
 }
 
 #modaleh4 {
@@ -482,316 +480,321 @@ h1 {
 }
 
 #modaleul {
-    padding-top : 20px;
+    padding-top: 20px;
     font-size: 16px;
     text-align: left;
 }
 
 #modaleul li {
     padding-bottom: 10px;
- }
-        
-                                                                                    /* Media Queries */
+}
 
-                                                                                /* Media Queries Tablette */
+/* Media Queries */
+
+/* Media Queries Tablette */
 
 @media screen and (max-width:990px) {
 
-body {
-    padding-left: 50px;
-    padding-right: 50px;
+    body {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+
+    /* Section */
+
+    #container_les_competences_et_outils {
+        flex-direction: column;
+    }
+
+    /* Les compétences */
+
+    #container_fond_competences {
+        width: 100%;
+        height: 626px;
+    }
+
+    /* Les outils */
+
+    #container_fond_outils {
+        width: 100%;
+        height: 278px;
+        margin-top: 53px;
+    }
+
+    #container_titre_outils {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    #container_articles_outils {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 144px;
+        padding-top: 26px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .article_outil {
+        width: 32%;
+    }
+
+    .texte_article_outil {
+        padding-left: 10px;
+
+    }
+
+    .descriptif_article_outil h3 {
+        font-size: 14px;
+    }
+
+    .descriptif_article_outil p {
+        font-size: 13px;
+    }
+
+
+    /* Les projets */
+
+    #projets {
+        height: 387px;
+    }
+
+    #projets h2 {
+        padding-bottom: 0px;
+    }
+
+    .activite_projet {
+        height: 267px;
+        margin-top: 25px;
+    }
+
+    .activite_projet img {
+        height: 80%;
+    }
+
+    .activite_projet h3 {
+        font-size: 14px;
+    }
+
+    .titre_projet {
+        height: 20%;
+    }
+
+    #modaledescription {
+        font-size: 14px;
+        padding-left: 5px;
+    }
+
 }
 
-
-/* Section */
-
-#container_les_competences_et_outils {
-    flex-direction: column;
-}
-
-/* Les compétences */
-
-#container_fond_competences {
-    width: 100%;
-    height: 626px;
-}
-
-/* Les outils */
-
-#container_fond_outils{
-    width: 100%;
-    height: 278px;
-    margin-top: 53px;
-}
-
-#container_titre_outils {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-#container_articles_outils{
-    flex-direction: row;
-    justify-content: space-between;
-    height: 144px;
-    padding-top: 26px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.article_outil {
-    width: 32%;
-}
-
-.texte_article_outil  {
-    padding-left: 10px;
-    
-}
-
-.descriptif_article_outil h3 {
-    font-size: 14px;
-}
-
-.descriptif_article_outil p {
-    font-size: 13px;
-}
-
-
-/* Les projets */
-
-#projets {
-    height: 387px;
-}
-
-#projets h2 {
-    padding-bottom: 0px;
-}
-
-.activite_projet {
-    height: 267px;
-    margin-top: 25px;
-}
-
-.activite_projet img {
-    height: 80%;
-}
-
-.activite_projet h3 {
-    font-size: 14px;
-}
-
-.titre_projet {
-    height: 20%;
-}
-
-#modaledescription{
-    font-size: 14px;
-    padding-left: 5px;
-}
-
-}
-
-                                                                                    /* Media Queries Mobile */
+/* Media Queries Mobile */
 
 @media screen and (max-width:767px) {
 
-body {
-    padding: 0;
-}
+    body {
+        padding: 0;
+    }
 
-/* Header */
+    /* Header */
 
-.article_competence img {
-    width: 25%;
-    padding-left: 35%;
-}
-.article_outil img {
-    width: 25%;
-}
-.texte_article_outil {
-    padding-left: 75px;
-}
-header {
-    display: block;
-    text-align: center;
-}
+    .article_competence img {
+        width: 25%;
+        padding-left: 35%;
+    }
 
-header img {
-    padding-top: 21px;
-}
+    .article_outil img {
+        width: 25%;
+    }
 
-nav {
-    text-align: center;
-}
+    .texte_article_outil {
+        padding-left: 75px;
+    }
 
-#nav_competences {
-    padding-left: 20px;
-    padding-bottom: 23px;
-    width: 50%;
-    border-bottom: 3px solid #F2F2F2;
-}
+    header {
+        display: block;
+        text-align: center;
+    }
 
-#nav_projets {
-    width: 50%;
-    padding-bottom: 23px;
-    margin-left: 0;
-    border-bottom: 3px solid #F2F2F2;
-}
+    header img {
+        padding-top: 21px;
+    }
 
-#nav_contact {
-    width: 50%;
-    padding-bottom: 23px;
-    margin-left: 0;
-    border-bottom: 3px solid #F2F2F2;
-}
+    nav {
+        text-align: center;
+    }
 
-#nav_competences:hover, #nav_projets:hover, #nav_contact:hover {
-    color: #0065FC;
-    border-top: none;
-}
+    #nav_competences {
+        padding-left: 20px;
+        padding-bottom: 23px;
+        width: 50%;
+        border-bottom: 3px solid #F2F2F2;
+    }
 
-/* Main */
+    #nav_projets {
+        width: 50%;
+        padding-bottom: 23px;
+        margin-left: 0;
+        border-bottom: 3px solid #F2F2F2;
+    }
 
-main {
-    margin-top: 31px;
-}
+    #nav_contact {
+        width: 50%;
+        padding-bottom: 23px;
+        margin-left: 0;
+        border-bottom: 3px solid #F2F2F2;
+    }
 
-#container_les_competences_et_outils {
-    flex-direction: column-reverse;
-    margin-top: 0;
-}
+    #nav_competences:hover,
+    #nav_projets:hover,
+    #nav_contact:hover {
+        color: #0065FC;
+        border-top: none;
+    }
 
-/* Les outils */
+    /* Main */
 
-#container_fond_outils {
-    height: 580px;
-    border-radius: 0;
-}
+    main {
+        margin-top: 31px;
+    }
 
-#container_titre_outils {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 28px;
-}
+    #container_les_competences_et_outils {
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
 
-#container_articles_outils {
-    flex-direction: column;
-    height: 80%;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    /* Les outils */
 
-.article_outil {
-    width: 100%;
-}
+    #container_fond_outils {
+        height: 580px;
+        border-radius: 0;
+    }
 
-.article_outil a {
-    justify-content: space-between;
-}
+    #container_titre_outils {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 28px;
+    }
 
-.descriptif_article_outil h3 {
-    font-size: 16px;
-}
+    #container_articles_outils {
+        flex-direction: column;
+        height: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-.descriptif_article_outil p {
-    font-size: 14px;
-}
+    .article_outil {
+        width: 100%;
+    }
 
-/* Les compétences */
+    .article_outil a {
+        justify-content: space-between;
+    }
 
-#container_fond_competences {
-    height: auto;
-    background-color: #FFFFFF;
-    margin-top: 100px;
-}
+    .descriptif_article_outil h3 {
+        font-size: 16px;
+    }
 
-#container_fond_competences h2 {
-    padding-left: 20px;
-}
+    .descriptif_article_outil p {
+        font-size: 14px;
+    }
 
-#container_articles_competences {
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    /* Les compétences */
 
-.article_competence {
-    width: 100%;
-}
+    #container_fond_competences {
+        height: auto;
+        background-color: #FFFFFF;
+        margin-top: 100px;
+    }
 
-.article_comptence img {
-    width: 100%;
-}
+    #container_fond_competences h2 {
+        padding-left: 20px;
+    }
+
+    #container_articles_competences {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .article_competence {
+        width: 100%;
+    }
+
+    .article_comptence img {
+        width: 100%;
+    }
 
 
-/* Les projets */
+    /* Les projets */
 
-#projets {
-    height: 886px;
-    padding-left:  20px;
-    padding-right: 20px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    #projets {
+        height: 886px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-#titre_activites_projets {
-    display: flex;
-    flex-wrap: wrap;
-    width: 210px;
-    margin-bottom: 0;
-}
+    #titre_activites_projets {
+        display: flex;
+        flex-wrap: wrap;
+        width: 210px;
+        margin-bottom: 0;
+    }
 
-#container_activites_projets {
-    flex-direction: column;
-    padding-top: 0;
-    height: 882px;
-    width: 100%;
-}
+    #container_activites_projets {
+        flex-direction: column;
+        padding-top: 0;
+        height: 882px;
+        width: 100%;
+    }
 
-.activite_projet {
-    width: 100%;
-    height: 190px;
-    margin-top: 25px;
-}
+    .activite_projet {
+        width: 100%;
+        height: 190px;
+        margin-top: 25px;
+    }
 
-.activite_projet img {
-    height: 134px;
-}
+    .activite_projet img {
+        height: 134px;
+    }
 
-.titre_projet {
-    height: 25%;
-}
+    .titre_projet {
+        height: 25%;
+    }
 
-.activite_projet h3 {
-    font-size: 18px;
-}
+    .activite_projet h3 {
+        font-size: 18px;
+    }
 
-#modaledescription{
-    font-size: 18px;
-}
+    #modaledescription {
+        font-size: 18px;
+    }
 
-/* Footer */
+    /* Footer */
 
-footer {
-    padding-top: 80px
-}
+    footer {
+        padding-top: 80px
+    }
 
-#container_fond_footer {
-    height: auto;
-}
+    #container_fond_footer {
+        height: auto;
+    }
 
-#container_regroupement_footer {
-    flex-direction: column;
-    justify-content: space-between;
-    height: 80%;
-    padding-left: 20px;
-}
+    #container_regroupement_footer {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+        padding-left: 20px;
+    }
 
-.container_footer {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+    .container_footer {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
 }
