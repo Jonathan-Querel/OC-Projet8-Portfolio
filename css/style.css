@@ -470,7 +470,7 @@ h1 {
 
 #modalep {
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #modalecompetences {
@@ -482,10 +482,10 @@ h1 {
 #modaleul {
     padding-top: 20px;
     font-size: 16px;
-    text-align: left;
 }
 
 #modaleul li {
+    list-style: none;
     padding-bottom: 10px;
 }
 
