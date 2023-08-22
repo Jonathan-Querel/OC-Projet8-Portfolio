@@ -244,7 +244,7 @@ h1 {
 }
 
 
-/* Les plus populaires */
+/* Section Outils */
 
 #container_fond_outils {
     display: flex;
@@ -326,7 +326,7 @@ h1 {
 }
 
 
-/* Section Activités à Marseille */
+/* Section Projets */
 
 #projets {
     margin-top: 100px;
